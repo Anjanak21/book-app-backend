@@ -7,11 +7,7 @@ require('dotenv').config()
 
 app.use(express.json());
 app.use(cors({
-    origin: ['http://localhost:5173', 'https://book-app-frontend-nu.vercel.app'],
-    credentials: true,
-    methods: 'GET,POST,PUT,DELETE',  // Allow these HTTP methods
-    allowedHeaders: 'Content-Type,Authorization',  // Allow these headers in requests
-
+   
 }))
 
 const bookRoutes = require('./src/books/book.route')
