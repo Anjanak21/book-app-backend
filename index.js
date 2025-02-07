@@ -10,6 +10,8 @@ app.use(cors({
   credentials:true
  
 }));
+
+
 app.use(express.json());
 
 // Set up CORS with the frontend origin
