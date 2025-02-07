@@ -7,7 +7,7 @@ require('dotenv').config()
 
 app.use(express.json());
 app.use(cors({
-    origin:['http://localhost:5173','https://book-app-frontend-nu.vercel.app'],
+    origin:['http://localhost:5173'],
     credentials:true,
     allowedHeaders: ['Content-Type', 'Authorization'],
 }))
